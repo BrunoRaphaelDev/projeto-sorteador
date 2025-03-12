@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow: none;
+}
+
+img {
+    position: fixed;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    
+
+}
+
+body {
+    background-color: black;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+
+h2 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    margin-bottom: 26px;
+}
+
+section{
+    background: rgba(255, 255, 255, 0.329);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.479);
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 40px;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    height: 74px;
+    width: 100%;
+    max-width: 342px;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 40px;
+    color: #000000;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #eb3427;
+    box-shadow: 0 0 10px rgba(255, 10, 1, 0.5);
+    opacity: 1;
+}
+
+.min {
+    margin-right: 62px;
+}
+
+.result-e-button {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.resultado {
+    font-size: 40px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+button {
+    background: #8f1915;
+    box-shadow: 0px 18px 100px rgba(255, 0, 0, 0.418);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 342px;
+    height: 72px;
+    border: none;
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+button:active {
+    opacity: 0.7;
+    transform: scale(0.98);
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+    input {
+        font-size: 28px;
+        height: 60px;
+    }
+
+    button {
+        font-size: 28px;
+        height: 60px;
+    }
+
+    .resultado {
+        font-size: 30px;
+    }
+}
